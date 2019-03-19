@@ -1,0 +1,40 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(function()
+  {
+    $(".menu-toggle").on("click",function(){
+      // $("#menu-primary").slideToggle();
+      $(".menu-primary").toggleClass('menu-expand');
+    })
+  })
+});
+</script>
+<header>
+  <div class="div-header">
+
+    <div class="logo">
+      <a href="">
+     <!-- <img src="images/home/logo-name.png" alt="logo" width="auto" height="38" style="margin-top:3px;" /> -->
+     <div class="logoname" >Farm<span id="span-peek">Care</span></div>
+      </a>
+    </div>
+
+    <div class="nav-bar">
+      <nav id="site-navigation" class="main-navigation">
+        <button class="menu-toggle"><i class="fas fa-bars fa-lg"></i> Menu</button>
+         <ul class="menu-primary">
+           <a href="http://localhost:8000/"><li>Home</li></a>
+           <a href="http://localhost:8000/plants/"><li>Plants</li></a>
+           <a href="http://localhost:8000/statics/"><li>Statics</li></a>
+           <a href="http://localhost:8000/articles/"><li>Articles</li></a>
+           <a href="http://localhost:8000/weather/"><li>Weather</li></a>
+           <a href="http://localhost:8000/contact/"><li>Contact</li></a>
+           <a href="http://localhost:8000/aboutus/"><li>About Us</li></a>
+           <a href="http://localhost:8000/profile/"><li>Profile</li></a>
+         </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>

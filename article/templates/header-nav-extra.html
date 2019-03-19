@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sagar Kalyan">
+    <meta name="author" content="sagar kalyan">
+    <title>Sagar Kalyan</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.1/examples/album/album.css" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/header/header.css' %}">
+	<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+	</style>
+  </head>
+
+  <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(function()
+  {
+    $(".menu-toggle").on("click",function(){
+      // $("#menu-primary").slideToggle();
+      $(".menu-primary").toggleClass('menu-expand');
+    })
+  })
+});
+</script>
+<header>
+  <div class="div-header">
+
+    <div class="logo">
+      <a href="">
+     <!-- <img src="images/home/logo-name.png" alt="logo" width="auto" height="38" style="margin-top:3px;" /> -->
+     <div class="logoname" >Farm<span id="span-peek">Care</span></div>
+      </a>
+    </div>
+
+    <div class="nav-bar">
+      <nav id="site-navigation" class="main-navigation">
+        <button class="menu-toggle"><i class="fas fa-bars fa-lg"></i> Menu</button>
+         <ul class="menu-primary">
+           <a href="http://localhost:8000/"><li>Home</li></a>
+           <a href="http://localhost:8000/plants/"><li>Plants</li></a>
+           <a href="http://localhost:8000/statics/"><li>Statics</li></a>
+           <a href="http://localhost:8000/articles/"><li>Articles</li></a>
+           <a href="http://localhost:8000/weather/"><li>Weather</li></a>
+           <a href="http://localhost:8000/contact/"><li>Contact</li></a>
+           <a href="http://localhost:8000/aboutus/"><li>About Us</li></a>
+           <a href="http://localhost:8000/profile/"><li>Profile</li></a>
+         </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+
+  </body>
+</html>

@@ -1,0 +1,59 @@
+from django.db import models
+# Create your models here.
+# Create your models here.
+class Article(models.Model):
+    article_id = models.AutoField(primary_key=True)
+    article_heading = models.CharField(max_length=250)
+    article_body = models.TextField()
+
+    def __str__(self):
+        return self.article_heading
+
+
+class Xaxisdata(models.Model):
+    """Model representing a Category """
+    name = models.IntegerField( help_text="Enter a Data.." )
+
+    def __str__(self):
+        """String for representing the Model object (in Admin site etc.)"""
+        return self.name
+
+class Yaxisdata(models.Model):
+    """Model representing a Category """
+    name = models.IntegerField( help_text="Enter a Data.." )
+
+    def __str__(self):
+        """String for representing the Model object (in Admin site etc.)"""
+        return self.name
+
+class Chart(models.Model):
+    title = models.CharField(max_length=250)
+    xaxis = models.CharField(max_length=250)
+    xaxisdata = models.ManyToManyField(Xaxisdata, help_text="Select a Options")
+    yaxis = models.TextField(max_length=250)
+    yaxisdata = models.ManyToManyField(Yaxisdata, help_text="Select a Options")
+
+
+class Xaxis_data(models.Model):
+    """Model representing a Category """
+    name = models.IntegerField( help_text="Enter a Data.." )
+
+    def __str__(self):
+        """String for representing the Model object (in Admin site etc.)"""
+        return self.name
+
+class Yaxis_data(models.Model):
+    """Model representing a Category """
+    name = models.IntegerField( help_text="Enter a Data.." )
+
+    def __str__(self):
+        """String for representing the Model object (in Admin site etc.)"""
+        return self.name	
+
+class Chartjs(models.Model):
+    chart_id = models.AutoField(primary_key=True)
+    chart_title = models.CharField(max_length=250)
+    xaxis_name = models.CharField(max_length=250)
+    xaxis_data = models.ManyToManyField(Xaxis_data, help_text="Select a Options")
+    yaxis_name = models.TextField(max_length=250)
+    yaxis_data = models.ManyToManyField(Yaxis_data, help_text="Select a Options")	

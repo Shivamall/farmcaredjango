@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title>About Us - FarmsCare</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="About Us - FarmsCare">
+    <meta name="author" content="FarmsCare">
+
+    <!-- Multi Select Vue -->
+    <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.1/examples/album/album.css" rel="stylesheet">
+	 <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/header/header.css' %}">
+	<link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+	<link rel="stylesheet" href="{% static 'css/footer/footer.css' %}">
+	<style>
+     @import url('https://fonts.googleapis.com/css?family=Patua+One');
+	</style>
+  </head>
+  <body>
+ {% include 'header-nav.html' %}
+ <h1>About Us</h1>
+
+
+ {% include 'footer.html' %}
+  </body>
+</html>

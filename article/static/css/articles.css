@@ -1,0 +1,50 @@
+body
+{
+    margin: auto;
+  
+}
+.container
+{
+    width: 1200px;
+}
+h1
+{
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+img{
+width: 100%;
+height: 30vh;
+
+}
+p
+{
+    display: inline-block;
+}
+
+.charts{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+}
+
+.charts img
+{
+    width: 25vw;
+    height: 50vh;
+    grid-column: 1/2;
+
+}
+
+.charts ol
+{
+    width: 20vw;
+    height: 25vh;
+    grid-column: 2/3;
+ 
+}
+
